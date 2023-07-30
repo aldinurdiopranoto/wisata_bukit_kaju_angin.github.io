@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+container-max-widths{
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+}
+
+mixin make-container: padding-x;
+container-padding-x{
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+  border-color: rgb(35, 146, 198) gray plum;
+  background: radial-gradient(circle farthest-corner at 10% 209%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+}
+
+li {
+  float: left;
+  border-right:1px solid;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {background: ;
+  display: block;
+  color: rgb(128, 128, 128);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+;
+}
+
+.active {
+  background-color: #111;
+}
+.location-link-container {
+    background-color: #ffffff00;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.location-link-container h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    padding: 20px;
+    color: #333;
+}
+
+.location-link-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color:#333;
+    background: none;
+}
+
+.location-link-container a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.location-link-container a:hover {
+    background-color: #45a049;
+}

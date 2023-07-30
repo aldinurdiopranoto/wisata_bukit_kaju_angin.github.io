@@ -1,0 +1,83 @@
+body {
+	background: url(../img/body-bkg.jpg) repeat scroll;
+	margin: 0;
+	padding: 0;
+}
+container-max-widths{
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+}
+
+mixin make-container: padding-x;
+container-padding-x{
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: radial-gradient(circle farthest-corner at 10% 209%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+}
+
+li {
+  float: left;
+  border-right:1px solid;
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+
+}
+
+.active {
+  background-color: #111;
+}
+.gambar-dan-teks{
+	display: flex;
+	align-items: center;
+}
+img{
+	width: 300px;
+	height: 220px;
+	letter-spacing:10px;
+	margin: 5px;
+}
+
+h3{
+	text-align:50px ;
+	color: #9999;
+}
+
+h1{
+	text-align: center;
+}
+P{
+  font-family: Posterama;
+	font-size: 25;
+}
